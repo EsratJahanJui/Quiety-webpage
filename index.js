@@ -11,6 +11,8 @@ const removeActiveClass = () => {
 };
 
 tabAiBtn.addEventListener("click", () => {
+  removeActiveClass();
+
   let allOffer = document.querySelectorAll(".show_hide_feature");
 
   allOffer.forEach((offer) => {
@@ -18,6 +20,8 @@ tabAiBtn.addEventListener("click", () => {
   });
   const fullaiButton = document.getElementById("ai_button");
   fullaiButton.style.display = "flex";
+  tabAiBtn.classList.add("features_active");
+
 });
 
 tabPowerBtn.addEventListener("click", () => {
@@ -35,6 +39,8 @@ tabPowerBtn.addEventListener("click", () => {
 });
 
 tabTechBtn.addEventListener("click", () => {
+  removeActiveClass();
+
   let allOffer = document.querySelectorAll(".show_hide_feature");
 
   allOffer.forEach((offer) => {
@@ -42,6 +48,8 @@ tabTechBtn.addEventListener("click", () => {
   });
   const fullTechnology = document.getElementById("tech_button");
   fullTechnology.style.display = "flex";
+  tabTechBtn.classList.add("features_active");
+
 });
 
 

@@ -34,28 +34,23 @@
                 <a href="#testimonial_section">Testimonial</a>
               </li>
               <li class="nav_item"><a href="#work_section">Work</a></li>
+              <li class="nav_item"><a href="#">Sign In</a></li>
+              <li class="nav_item">
+                <a href="#">Get Started</a>
+              </li>
             </ul>
           </div>
           <div class="nav_btn_items">
-            <div class="nav_btn">
-              <a href="#">Sign In</a>
+            <!-- mobile btn -->
+            <div class="nav__buttons">
+              <button class="nav__toggle-open">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <button class="nav__toggle-close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
-            <div class="nav_btn btn_skew">
-              <a href="#"> <span>Get Started</span></a>
-            </div>
-               <!-- mobile btn -->
-           <div class="nav__buttons">
-            <button class="nav__toggle-open">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-            <button class="nav__toggle-close">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
           </div>
-
-          </div>
-        
-         
         </nav>
       </div>
     </header>
@@ -1018,6 +1013,11 @@
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
+          375: {
+            slidesPerView: 1,
+
+
+          }
           640: {
             slidesPerView: 1,
           },
