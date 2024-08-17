@@ -909,7 +909,7 @@ label {
   }
   .nav_list {
     position: fixed;
-    right: 0;
+    left: 0;
 
     top: 5.06rem;
     flex-direction: column;
